@@ -1,3 +1,4 @@
+
 <header>
     <div class="bg-primary">
         <div class="container">
@@ -18,16 +19,16 @@
                     </div>
                     <div class="col-9">
                         <ul class="list-group list-group-horizontal justify-content-end d-flex">
-                            <li class="list-group-item border border-0 text-uppercase bg-transparent">Characters</li>
-                            <li class="list-group-item border border-0 text-uppercase bg-transparent">Comics</li>
-                            <li class="list-group-item border border-0 text-uppercase bg-transparent">Movies</li>
-                            <li class="list-group-item border border-0 text-uppercase bg-transparent">TV</li>
-                            <li class="list-group-item border border-0 text-uppercase bg-transparent">Games</li>
-                            <li class="list-group-item border border-0 text-uppercase bg-transparent">Collectibles</li>
-                            <li class="list-group-item border border-0 text-uppercase bg-transparent">Videos</li>
-                            <li class="list-group-item border border-0 text-uppercase bg-transparent">Fans</li>
-                            <li class="list-group-item border border-0 text-uppercase bg-transparent">News</li>
-                            <li class="list-group-item border border-0 text-uppercase bg-transparent">Shop <i class="fas fa-caret-down"></i></li>
+                            <li class="list-group-item border border-0 text-uppercase bg-transparent py-5">Characters</li>
+                            <li class="list-group-item border border-0 text-uppercase bg-transparent text-primary border-bottom border-primary border-5 py-5">Comics</li>
+                            <li class="list-group-item border border-0 text-uppercase bg-transparent py-5">Movies</li>
+                            <li class="list-group-item border border-0 text-uppercase bg-transparent py-5">TV</li>
+                            <li class="list-group-item border border-0 text-uppercase bg-transparent py-5">Games</li>
+                            <li class="list-group-item border border-0 text-uppercase bg-transparent py-5">Collectibles</li>
+                            <li class="list-group-item border border-0 text-uppercase bg-transparent py-5">Videos</li>
+                            <li class="list-group-item border border-0 text-uppercase bg-transparent py-5">Fans</li>
+                            <li class="list-group-item border border-0 text-uppercase bg-transparent py-5">News</li>
+                            <li class="list-group-item border border-0 text-uppercase bg-transparent py-5">Shop <i class="fas fa-caret-down"></i></li>
                         </ul>
                     </div>
                 </div>
