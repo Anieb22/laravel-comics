@@ -1,5 +1,15 @@
 @import '~bootstrap/scss/bootstrap';
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
 .jumbotron {
     background-image: url("../img/jumbotron.jpg");
     height: 400px;
@@ -10,7 +20,15 @@ li:hover {
     cursor: pointer;
 }
 
-li {
+li,
+a {
     font-weight: 900;
-    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img:hover {
+    border: 1px solid #0d6efd;
 }
