@@ -17,7 +17,7 @@
                     <div class="col-1 my-3">
                         <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
                     </div>
-                    <div class="col-10">
+                    <div class="col-10" id="menu-bar">
                         <ul class="list-group list-group-horizontal justify-content-end d-flex align-items-center">
                             <li class="list-group-item border border-0 text-uppercase bg-transparent py-5">Characters</li>
                             <li class="list-group-item border border-0 text-uppercase bg-transparent text-primary border-bottom border-primary border-5 py-5">Comics</li>
