@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
         @foreach($comics as $id => $comic)
-        <div class="col-2 my-4" id="comics">
+        <div class="col-2 my-4" id="comics-list">
             <a href="{{ route('comic.show', $id)}}">
                 <div class="card border border-0 text-uppercase bg-transparent" style="width: 13rem;">
                     <img src="{{ $comic['thumb'] }}"  class="card-img-top">
