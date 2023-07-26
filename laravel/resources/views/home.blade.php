@@ -1,28 +1,53 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.app')
+@section('content')
+<main class="bg-dark">
+    <div class="container">
+        <div class="row">
+        @foreach($comics as $id => $comic)
+        <div class="col-2 my-4" id="comics">
+            <a href="{{ route('comic.show', $id)}}">
+                <div class="card border border-0 text-uppercase bg-transparent" style="width: 13rem;">
+                    <img src="{{ $comic['thumb'] }}"  class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text text-white">{{$comic['series']}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        @endforeach
+        <div class="col-12 d-flex justify-content-center mb-4">
+            <button class="btn btn-primary text-uppercase px-5 border border-0 rounded-0">load more</button>
+        </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 justify-content-between d-flex" id="mid-bar">
+                    <div class="col-2 d-flex flex-row align-items-center">
+                        <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="">
+                        <p class="text-uppercase m-2">Digital Comics</p>
+                    </div>
+                    <div class="col-2 d-flex flex-row align-items-center">
+                        <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png')}}" alt="">
+                        <p class="text-uppercase m-2">DC merchandise</p>
+                    </div>
+                    <div class="col-2 d-flex flex-row align-items-center">
+                        <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png')}}" alt="">
+                        <p class="text-uppercase m-2">Subscription</p>
+                    </div>
+                    <div class="col-2 d-flex flex-row align-items-center">
+                        <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png')}}" alt="">
+                        <p class="text-uppercase m-2">Comic shop locator</p>
+                    </div>
+                    <div class="col-2 d-flex flex-row align-items-center">
+                        <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg')}}" alt="">
+                        <p class="text-uppercase m-2">DC power visa</p>
+                    </div>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>DC Comics</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    @vite('resources/js/app.js')
-</head>
-
-<body>
-  @include('partials.header')
-  <div class="jumbotron"></div>
-  @include('partials.main')
-  @include('partials.footer')
-</body>
-
-</html>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@endsection

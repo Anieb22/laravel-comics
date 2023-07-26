@@ -22,4 +22,4 @@ Route::get('/comics/{comic}', function($id){
     $comics = config('comics.comics');
     $comic = $comics[$id];
     return view('comics.show', compact('comic'));
-});
+})->name('comic.show');
